@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>User Login - Sign In to Your Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Welcome back! Sign in to continue to your account with your email and password or connect with socials. Forgot your password? Recover it easily." />
+     <img alt="Logo" src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v=" style="width: 0px; height: 0px; display: none" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/components.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/login.css" /> -->
+     <link rel="stylesheet" type="text/css" href="login.css" /> 
+</head>
+<body>
+    <!-- login page section -->
+    <div class="login">
+        <!-- greeting section -->
+        <div class="rowhello">
+            <!-- signup section -->
+            <div class="flex-col-center-center login__left">
+                <div class="login__left_column">
+                    <h1 class="login_left greeting ui heading size-headingxl">Hello!</h1>
+                    <p class="login__left_confirmation ui text size-texts">Don't have an account yet?</p>
+                    <a href="" target="_blank">
+                        <button class="login_left_button ui button indigo_a200 size-7xl fill">Create an account</button>
+                    </a>
+                </div>
+            </div>
+            <!-- login form section -->
+            <div class="login-1">
+                <!-- login navigation section -->
+                <div class="login__modal">
+                    <div class="login_indicator"></div>
+                    <div class="login__content">
+                        <!-- login fields section -->
+                        <div class="login_header">
+                            <img src="pic\Power_1_-removebg-preview.png" alt="Logo Image" class="login_logo" />
+                            <div class="login_title">
+                                <h2 class="login__welcome ui heading size-headinglg">Welcome Back!</h2>
+                                <p class="login_signin ui text size-texts">Sign in to continue</p>
+                            </div>
+                        </div>
+            <!-- password recovery section -->
+            <div class="login_form">
+                <div class="login_input-group">
+                    <div class="login_input-wrapper">
+                        <h3 class="login_label-email ui heading size-headingxs">Email</h3>
+                        <label class="login_input-email ui input gray_500_33 size-sm outline round">
+                            <input name="Email Input" placeholder="user@mail.com" type="email" id = "username"/>
+                            <img src="public/images/img_checkmark.svg" alt="Checkmark" class="facebook" />
+                        </label>
+                    </div>
+                    <div class="login_input-wrapper">
+                        <h4 class="login_label-email ui heading size-headingxs">Password</h4>
+                        <label class="login_input-email ui input gray_500_33 size-sm outline round">
+                            <input name="Password Input" placeholder="Password@123" type="password" id = "password" />
+                            <img src="public/images/img_notification.svg" alt="Notification" class="facebook" />
+                        </label>
+                    </div>
+                </div>
+                <input type = "button" onclick="login ()" id = "submit" value = "login">
+            
+           
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+
+    function login(){
+        let username = document.getElementById("username").value;
+        let password2 = document.getElementById("password").value ;
+
+          let website_username= "technest";
+          let website_password = "123456";
+
+          if(username == website_username && password2 == website_password){
+            window.location = "index.html";
+          }
+
+    }
+
+</script>
+</body>
+</html>
+        
